@@ -25,6 +25,6 @@ FCKConfig.SkinPath = FCKConfig.BasePath + 'skins/silver/';
 FCKConfig.ToolbarSets["Simple"] = [
         ['Bold','Italic','Underline','StrikeThrough','-'],
         ['OrderedList','UnorderedList','-'],
-        ['Link','Unlink'], ['Image'], ['FontSize'],
-        ['TextColor','BGColor'], ['easyImage','easyFile','easyLink']
+        ['FontSize'], ['TextColor','BGColor'],
+        ['easyImage', 'easyLink']
 ] ;
