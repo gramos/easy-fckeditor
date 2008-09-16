@@ -51,7 +51,7 @@ module FckeditorFileUtils
 
   def FckeditorFileUtils.install(log)
     directory = File.join(RAILS_ROOT, '/vendor/plugins/easy_fckeditor/')
-    source = File.join(directory,'/public/javascripts/easy_fckeditor/')
+    source = File.join(directory,'/public/javascripts/fckeditor/')
     FileUtils.mkdir(FCKEDITOR_INSTALL_DIRECTORY)
     # recursively copy all our files over
     recursive_copy(:source => source, :dest => FCKEDITOR_INSTALL_DIRECTORY, :logging => log)
