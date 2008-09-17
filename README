@@ -1,11 +1,12 @@
-== Easy FCKEditor Version 0.8.0 (Tested under Rails 2.1.1)
+Easy FCKEditor Rails plugin
+===========================
 
 Gaston Ramos
 ramos.gaston [at] gmail [dot] com
 
 Easy FCKEditor is a Rails Plugin and a fork of Scott Rutherford great plugin
 (script/plugin install svn://rubyforge.org//var/svn/fckeditorp/trunk/fckeditor)
-with a EasyUpload plugin  http://martinezdelizarrondo.com/easyupload/ of Alfonso Martínez de Lizarrondo.
+with a EasyUpload plugin inlcuded http://martinezdelizarrondo.com/easyupload/ of Alfonso Martínez de Lizarrondo.
 
 This plugin installs the FCKeditor editor into your rails app, along with some helpers to use in your views.
 
@@ -16,6 +17,14 @@ Features
    * 2 configurable versions of upload images modules (easy and complete).
    * Easy link maker.
    * Easy and Simple version.
+
+Versions
+========
+  This plugin is tested with:
+
+  * Rails 2.1.1
+  * Ruby 1.8.6 Patchlevel 114
+  * FCKeditor 2.6.3
 
 Install
 =======
