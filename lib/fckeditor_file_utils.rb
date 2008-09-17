@@ -39,7 +39,7 @@ module FckeditorFileUtils
 
   def FckeditorFileUtils.copy_configuration
     # need to copy over the code if it doesn't already exist
-    config_file = File.join(RAILS_ROOT, '/vendor/plugins/easy-fckeditor/public/javascripts/fckcustom_easy.js')
+    config_file = File.join(RAILS_ROOT, '/vendor/plugins/easy-fckeditor/public/javascripts/fckcustom.js')
     dest = File.join(RAILS_ROOT, '/public/javascripts/fckcustom.js')
     FileUtils.cp(config_file, dest) unless File.exist?(dest)
   end
