@@ -19,7 +19,7 @@ Features
 ========
 
    * WYSIWYG text editor helper.
-   * 2 configurable versions of upload images modules (easy and complete).
+   * 2 configurable versions of upload images module (easy and complete).
    * Easy link maker.
 
 Versions
@@ -50,6 +50,8 @@ Uninstall
 Then the install should run task:
 
   rake fckeditor:uninstall
+
+and will are remove all installed files.
 
 Files
 =====
