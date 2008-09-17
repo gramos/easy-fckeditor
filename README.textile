@@ -36,7 +36,7 @@ Install
 
 If you got this using:
 
-ruby script/plugin install git://github.com/gramos/easy_fckeditor.git
+ruby script/plugin install git://github.com/gramos/easy-fckeditor.git
 
 Then the install should of copied all the appropriate files to their homes. If you download a tar then you can either do
 
