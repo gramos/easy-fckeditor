@@ -2,6 +2,7 @@ require 'fileutils'
 
 module FckeditorFileUtils
   FCKEDITOR_INSTALL_DIRECTORY = File.join(RAILS_ROOT, '/public/javascripts/fckeditor/')
+  PLUGIN_INSTALL_DIRECTORY =  File.join(RAILS_ROOT, '/vendor/plugins/easy-fckeditor/')
 
   def FckeditorFileUtils.recursive_copy(options)
     source = options[:source]
@@ -68,6 +69,12 @@ module FckeditorFileUtils
 
       FileUtils.rm(File.join(RAILS_ROOT, '/public/javascripts/fckcustom.js')) \
       if File.exist? File.join(RAILS_ROOT, '/public/javascripts/fckcustom.js')
+    end
+  end
+
+  def FckeditorFileUtils.rm_plugin
+    if File.exist?(PLUGIN_INSTALL_DIRECTORY)
+      FileUtils.rm_r(PLUGIN_INSTALL_DIRECTORY)
     end
   end
 
