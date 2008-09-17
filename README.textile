@@ -1,4 +1,4 @@
-<!-- -*- coding: utf-8; -*- -->
+<!-- -*- mode: markdown; coding: utf-8; -*- -->
 
 Easy FCKEditor Rails plugin
 ===========================
