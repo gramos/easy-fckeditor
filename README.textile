@@ -11,8 +11,9 @@ Easy FCKEditor is a Rails Plugin thats generate a WYSIWYG text editor helper. Th
 
 This plugin installs the FCKeditor editor into your rails app, along with some helpers to use in your views.
 
-  [1] http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released
-  [2] http://martinezdelizarrondo.com/easyupload/
+[1] http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released
+
+[2] http://martinezdelizarrondo.com/easyupload/
 
 Features
 ========
@@ -39,7 +40,7 @@ ruby script/plugin install git://github.com/gramos/easy_fckeditor.git
 
 Then the install should of copied all the appropriate files to their homes. If you download a tar then you can either do
 
-rake fckeditor:install
+  rake fckeditor:install
 
 from the root of your app, or the file will be installed the first time you startup after untaring the plugin.
 
@@ -55,7 +56,7 @@ IMPORTANT
 
 If you are hosting your rails app in a subdirectory you need to open:
 
-public/javascripts/fckcustom.js
+  public/javascripts/fckcustom.js
 
 and modify the FCKRelativePath = ''; to suite your needs.
 
@@ -63,7 +64,7 @@ For example if I have an app at www.mydomain.com/app/
 
 then the line should read:
 
-FCKRelativePath = '/app';
+  FCKRelativePath = '/app';
 
 
 Usage
@@ -71,11 +72,11 @@ Usage
 
 Basically include this in the page you wish to use the editor in
 
-<%= javascript_include_tag :fckeditor %>
+  <%= javascript_include_tag :fckeditor %>
 
 Then instead of the normal textarea helper from Rails use this one
 
-<%= fckeditor_textarea("object", "field", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
+  <%= fckeditor_textarea("object", "field", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
 
 Thats it unless you are using AJAX
 
@@ -84,12 +85,12 @@ AJAX
 
 To use a remote form you need to do something like this
 
-<%= form_remote_tag :url => @options.merge(:controller => @scaffold_controller),
+  <%= form_remote_tag :url => @options.merge(:controller => @scaffold_controller),
                     :before => fckeditor_before_js('note', 'text') %>
 
     <%= fckeditor_textarea( "note", "text", :ajax => true ) %>
 
-<%= end_form_tag %>
+  <%= end_form_tag %>
 
 If you forget to put in the :before it won't work, you can also use the fckeditor_form_remote_tag described below
 
@@ -99,13 +100,13 @@ Multiple Editors in a form
 To create a form using multiple editors use the fckeditor_form_remote_tag helper and pass the :editors option. This takes an hash of model symbol keys with each having
 an array as its value. The array should contain the list of fields that will have editors attached to them.
 
-<%= fckeditor_form_remote_tag :url => @options.merge(:controller => @scaffold_controller),
+  <%= fckeditor_form_remote_tag :url => @options.merge(:controller => @scaffold_controller),
                               :editors => { :multinote => ['text1', 'text2'] } %>
 
     <%= fckeditor_textarea( "multinote", "text1", :ajax => true ) %>
     <%= fckeditor_textarea( "multinote", "text2", :ajax => true ) %>
 
-<%= end_form_tag %>
+  <%= end_form_tag %>
 
 There is also a fckeditor_remote_form_for version.
 
@@ -114,8 +115,8 @@ Spell Check
 
 Basically ensure you have aspell installed and available in your path. If running on Windows then the expected install path is:
 
-'c:\program files\aspell\bin\aspell'
+  'c:\program files\aspell\bin\aspell'
 
 If you install elsewhere then you will need to update spell_check.rb in the plugin to mirror your path. Also make sure you have this line in your fckcustom.js file:
 
-FCKConfig.SpellChecker = 'SpellerPages';
+  FCKConfig.SpellChecker = 'SpellerPages';
