@@ -51,7 +51,7 @@ Then the install should run task:
 
   rake fckeditor:uninstall
 
-and will are remove all installed files.
+and all the installed the installed files will be removed.
 
 Files
 =====
