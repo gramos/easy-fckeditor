@@ -1,3 +1,5 @@
+0.8.1 - Remove plugin files on uninstall
+
 0.8.0 - Added uninstall rake task
 
 0.8.0 - Refactoring for fckeditor controller
