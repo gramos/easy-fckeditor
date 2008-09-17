@@ -24,7 +24,7 @@ FCKConfig.ToolbarSets["Easy"] = [
         ['Bold','Italic','Underline','StrikeThrough','-'],
         ['OrderedList','UnorderedList','-'],
         ['FontSize'], ['TextColor','BGColor'],
-        ['easyImage', 'easyLink']
+        ['easyImage', 'easyLink', 'Unlink']
 ] ;
 
 FCKConfig.ToolbarSets["Simple"] = [
