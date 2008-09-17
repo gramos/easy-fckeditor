@@ -65,6 +65,9 @@ module FckeditorFileUtils
   def  FckeditorFileUtils.destroy
     if File.exist?(FCKEDITOR_INSTALL_DIRECTORY)
       FileUtils.rm_r(FCKEDITOR_INSTALL_DIRECTORY)
+
+      FileUtils.rm(File.join(RAILS_ROOT, '/public/javascripts/fckcustom.js')) \
+      if File.exist? File.join(RAILS_ROOT, '/public/javascripts/fckcustom.js')
     end
   end
 
