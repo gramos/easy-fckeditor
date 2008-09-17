@@ -27,9 +27,6 @@ FCKConfig.ToolbarSets["Easy"] = [
         ['easyImage', 'easyLink']
 ] ;
 
-// ONLY CHANGE BELOW HERE
-FCKConfig.SkinPath = FCKConfig.BasePath + 'skins/silver/';
-
 FCKConfig.ToolbarSets["Simple"] = [
         ['Source','-','-','Templates'],
         ['Cut','Copy','Paste','PasteWord','-','Print','SpellCheck'],
