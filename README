@@ -5,13 +5,20 @@ ramos.gaston [at] gmail [dot] com
 
 Easy FCKEditor is a Rails Plugin and a fork of Scott Rutherford great plugin
 (script/plugin install svn://rubyforge.org//var/svn/fckeditorp/trunk/fckeditor)
-
--------
+with a EasyUpload plugin  http://martinezdelizarrondo.com/easyupload/ of Alfonso Martínez de Lizarrondo.
 
 This plugin installs the FCKeditor editor into your rails app, along with some helpers to use in your views.
 
+Features
+========
+
+   * WYSIWYG text editor.
+   * 2 configurable versions of upload images modules (easy and complete).
+   * Easy link maker.
+   * Easy and Simple version.
+
 Install
--------
+=======
 
 If you got this using:
 
@@ -24,14 +31,14 @@ rake fckeditor:install
 from the root of your app, or the file will be installed the first time you startup after untaring the plugin.
 
 Files
------
+=====
 
 Basically the whole of the FCKeditor suite is copied to: public/javascripts/fckeditor
 
 There is a separate config file copied to: public/javascripts/fckcustom.js, that you can use to customize the install. This file is never overriden by upgrades or reinstalls
 
 IMPORTANT
----------
+=========
 
 If you are hosting your rails app in a subdirectory you need to open:
 
@@ -47,7 +54,7 @@ FCKRelativePath = '/app';
 
 
 Usage
------
+=====
 
 Basically include this in the page you wish to use the editor in
 
@@ -60,7 +67,7 @@ Then instead of the normal textarea helper from Rails use this one
 Thats it unless you are using AJAX
 
 AJAX
-----
+====
 
 To use a remote form you need to do something like this
 
@@ -74,7 +81,7 @@ To use a remote form you need to do something like this
 If you forget to put in the :before it won't work, you can also use the fckeditor_form_remote_tag described below
 
 Multiple Editors in a form
---------------------------
+==========================
 
 To create a form using multiple editors use the fckeditor_form_remote_tag helper and pass the :editors option. This takes an hash of model symbol keys with each having
 an array as its value. The array should contain the list of fields that will have editors attached to them.
@@ -90,7 +97,7 @@ an array as its value. The array should contain the list of fields that will hav
 There is also a fckeditor_remote_form_for version.
 
 Spell Check
------------
+===========
 
 Basically ensure you have aspell installed and available in your path. If running on Windows then the expected install path is:
 
