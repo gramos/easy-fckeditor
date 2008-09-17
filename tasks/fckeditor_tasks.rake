@@ -24,6 +24,15 @@ namespace :fckeditor do
     puts "** Successfully installed FCKEditor Plugin version #{FckeditorVersion.current}"
   end
 
+  desc 'Uninstall the FCKEditor components'
+  task :uninstall do
+    puts "** Uninstalling FCKEditor Plugin version #{FckeditorVersion.current}..."
+
+    FckeditorFileUtils.destroy
+
+    puts "** Successfully Uninstalled FCKEditor Plugin version #{FckeditorVersion.current}"
+  end
+
   def fetch(path)
     response = Net::HTTP.get_response(URI.parse(path))
     case response
