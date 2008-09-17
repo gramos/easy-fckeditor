@@ -4,7 +4,7 @@ Easy FCKEditor Rails plugin
 Gaston Ramos
 ramos.gaston [at] gmail [dot] com
 
-Easy FCKEditor is a Rails Plugin WYSIWYG text editor and a fork of Scott Rutherford great plugin [1] with a EasyUpload plugin [2] inlcuded of Alfonso Martínez de Lizarrondo.
+Easy FCKEditor is a Rails Plugin thats generate a WYSIWYG text editor helper. This version is a fork of Scott Rutherford great plugin [1] with a EasyUpload plugin [2] inlcuded of Alfonso Martínez de Lizarrondo.
 
 This plugin installs the FCKeditor editor into your rails app, along with some helpers to use in your views.
 
@@ -14,7 +14,7 @@ This plugin installs the FCKeditor editor into your rails app, along with some h
 Features
 ========
 
-   * WYSIWYG text editor.
+   * WYSIWYG text editor helper.
    * 2 configurable versions of upload images modules (easy and complete).
    * Easy link maker.
 
