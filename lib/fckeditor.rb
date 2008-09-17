@@ -1,6 +1,6 @@
 # Fckeditor
 module Fckeditor
-  PLUGIN_NAME = 'easy_fckeditor'
+  PLUGIN_NAME = 'easy-fckeditor'
   PLUGIN_PATH = "#{RAILS_ROOT}/vendor/plugins/#{PLUGIN_NAME}"
   PLUGIN_PUBLIC_PATH = "#{PLUGIN_PATH}/public"
   PLUGIN_CONTROLLER_PATH = "#{PLUGIN_PATH}/app/controllers"
