@@ -1,7 +1,7 @@
 Easy FCKEditor Rails plugin
 ===========================
 
-Gaston Ramos
+**Gaston Ramos**
 
 ramos.gaston [at] gmail [dot] com
 
