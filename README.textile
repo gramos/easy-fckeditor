@@ -44,6 +44,13 @@ Then the install should of copied all the appropriate files to their homes. If y
 
 from the root of your app, or the file will be installed the first time you startup after untaring the plugin.
 
+Uninstall
+=========
+
+Then the install should run task:
+
+  rake fckeditor:uninstall
+
 Files
 =====
 
