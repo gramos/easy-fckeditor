@@ -26,6 +26,7 @@ namespace :fckeditor do
 
   desc 'Uninstall the FCKEditor components'
   task :uninstall do
+    setup
     puts "** Uninstalling FCKEditor Plugin version #{FckeditorVersion.current}..."
 
     FckeditorFileUtils.destroy
