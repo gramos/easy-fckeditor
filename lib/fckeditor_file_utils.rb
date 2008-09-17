@@ -59,11 +59,17 @@ module FckeditorFileUtils
     create_uploads_directory
   end
 
-  def FckeditorFileUtils.destroy_and_install
-    # remove the existing install (if any) and install a new one
+  ##################################################################
+  # remove the existing install (if any)
+  #
+  def  FckeditorFileUtils.destroy
     if File.exist?(FCKEDITOR_INSTALL_DIRECTORY)
       FileUtils.rm_r(FCKEDITOR_INSTALL_DIRECTORY)
     end
+  end
+
+  def FckeditorFileUtils.destroy_and_install
+    FckeditorFileUtils.destroy
     # now install fresh
     install(true)
     # copy over the config file (unless it exists)
