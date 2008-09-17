@@ -1,5 +1,4 @@
-Easy FCKEditor Rails plugin
-===========================
+h1. Easy FCKEditor Rails plugin
 
 **Gaston Ramos**
 
