@@ -1,4 +1,4 @@
-<!-- -*- coding: utf-8; -*- -->
+<!-- -\*- coding: utf-8; -*- -->
 
 
 Easy FCKEditor Rails plugin
@@ -14,9 +14,9 @@ ramos.gaston [at] gmail [dot] com
 
 This plugin installs the FCKeditor editor into your rails app, along with some helpers to use in your views.
 
-1 [http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released](http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released)
+[1] [http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released](http://blog.caronsoftware.com/2007/11/16/fckeditor-plugin-0-4-2-released)
 
-2 [http://martinezdelizarrondo.com/easyupload/](http://martinezdelizarrondo.com/easyupload/)
+[2] [http://martinezdelizarrondo.com/easyupload/](http://martinezdelizarrondo.com/easyupload/)
 
 Features
 ========
