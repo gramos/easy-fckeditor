@@ -13,21 +13,35 @@ FCKConfig.SpellerPagesServerScript = FCKRelativePath+'/fckeditor/check_spelling'
 FCKConfig.AllowQueryStringDebug = false;
 FCKConfig.SpellChecker = 'SpellerPages';
 
+FCKConfig.Plugins.Add( 'easyUpload', 'en' ) ;
+
+FCKConfig.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
+
+// ONLY CHANGE BELOW HERE
+FCKConfig.SkinPath = FCKConfig.BasePath + 'skins/silver/';
+
+FCKConfig.ToolbarSets["Easy"] = [
+        ['Bold','Italic','Underline','StrikeThrough','-'],
+        ['OrderedList','UnorderedList','-'],
+        ['FontSize'], ['TextColor','BGColor'],
+        ['easyImage', 'easyLink']
+] ;
+
 // ONLY CHANGE BELOW HERE
 FCKConfig.SkinPath = FCKConfig.BasePath + 'skins/silver/';
 
 FCKConfig.ToolbarSets["Simple"] = [
-	['Source','-','-','Templates'],
-	['Cut','Copy','Paste','PasteWord','-','Print','SpellCheck'],
-	['Undo','Redo','-','Find','Replace','-','SelectAll'],
-	'/',
-	['Bold','Italic','Underline','StrikeThrough','-','Subscript','Superscript'],
-	['OrderedList','UnorderedList','-','Outdent','Indent'],
-	['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
-	['Link','Unlink'],
-	'/',
-	['Image','Table','Rule','Smiley'],
-	['FontName','FontSize'],
-	['TextColor','BGColor'],
-	['-','About']
+        ['Source','-','-','Templates'],
+        ['Cut','Copy','Paste','PasteWord','-','Print','SpellCheck'],
+        ['Undo','Redo','-','Find','Replace','-','SelectAll'],
+        '/',
+        ['Bold','Italic','Underline','StrikeThrough','-','Subscript','Superscript'],
+        ['OrderedList','UnorderedList','-','Outdent','Indent'],
+        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
+        ['Link','Unlink'],
+        '/',
+        ['Image','Table','Rule','Smiley'],
+        ['FontName','FontSize'],
+        ['TextColor','BGColor'],
+        ['-','About']
 ] ;
