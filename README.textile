@@ -85,7 +85,7 @@ Then instead of the normal textarea helper from Rails use this one
 
 and for use **Easy toolbar** with **EasyUpload plugin**
 
- <%= fckeditor_textarea("object", "field", :toolbarSet => 'Easy', :width => '100%', :height => '200px') %>
+ <% = fckeditor_textarea("object", "field", :toolbarSet => 'Easy', :width => '100%', :height => '200px') %>
 
 Thats it unless you are using AJAX
 
