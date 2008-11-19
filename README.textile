@@ -81,7 +81,7 @@ Basically include this in the page you wish to use the editor in
 
 Then instead of the normal textarea helper from Rails use this one
 
-  <%= fckeditor_textarea("object", "field", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
+  <% = fckeditor_textarea("object", "field", :toolbarSet => 'Simple', :width => '100%', :height => '200px') %>
 
 and for use **Easy toolbar** with **EasyUpload plugin**
 
