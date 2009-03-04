@@ -11,7 +11,7 @@ FCKConfig.ImageUploadURL = FCKRelativePath+'/fckeditor/upload?Type=Image';
 FCKConfig.FlashUploadURL = FCKRelativePath+'/fckeditor/upload?Type=Flash';
 FCKConfig.SpellerPagesServerScript = FCKRelativePath+'/fckeditor/check_spelling';
 FCKConfig.AllowQueryStringDebug = false;
-FCKConfig.SpellChecker = 'SpellerPages';
+FCKConfig.SpellChecker = 'WSC' ;	// 'WSC' | 'SpellerPages' | 'ieSpell'
 
 FCKConfig.Plugins.Add( 'easyUpload', 'en' ) ;
 
