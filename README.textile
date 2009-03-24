@@ -1,7 +1,7 @@
 Easy FCKEditor Rails plugin
 ===========================
 
-**GastÃ³n Ramos**
+**Gastón Ramos**
 
 ramos.gaston [at] gmail [dot] com
 
@@ -129,3 +129,12 @@ Basically ensure you have aspell installed and available in your path. If runnin
 If you install elsewhere then you will need to update spell_check.rb in the plugin to mirror your path. Also make sure you have this line in your fckcustom.js file:
 
   FCKConfig.SpellChecker = 'SpellerPages';
+
+
+Contribute
+==========
+
+There is a lighthouseapp account if you want to send a patch or report a bug
+
+http://easy_fckeditor.lighthouseapp.com/projects/27883-easy-fckeditor/overview
+
