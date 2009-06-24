@@ -15,6 +15,7 @@ FCKConfig.ImageUploadURL = FCKRelativePath + '/fckeditor/upload?Type=Image';
 FCKConfig.AllowQueryStringDebug = false;
 //FCKConfig.SpellChecker = 'SpellerPages';
 
+//FCKConfig.Plugins.Add( 'easyUpload', 'es' ) ;		// easyUpload translated to spanish
 FCKConfig.Plugins.Add( 'easyUpload', 'en' ) ;
 
 FCKConfig.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;

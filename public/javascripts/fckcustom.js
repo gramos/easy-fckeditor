@@ -13,6 +13,7 @@ FCKConfig.SpellerPagesServerScript = FCKRelativePath+'/fckeditor/check_spelling'
 FCKConfig.AllowQueryStringDebug = false;
 FCKConfig.SpellChecker = 'WSC' ;	// 'WSC' | 'SpellerPages' | 'ieSpell'
 
+//FCKConfig.Plugins.Add( 'easyUpload', 'es' ) ;		// easyUpload translated to spanish
 FCKConfig.Plugins.Add( 'easyUpload', 'en' ) ;
 
 FCKConfig.ContextMenu = ['Generic','Anchor','Flash','Select','Textarea','Checkbox','Radio','TextField','HiddenField','ImageButton','Button','BulletedList','NumberedList','Table','Form'] ;
